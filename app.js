@@ -1,3 +1,5 @@
+//ALWAYS START mongod BEFORE node app.js !!!!!!!!!!!!!!!
+
 var express     = require("express"),
     app         = express(),
     bodyParser  = require("body-parser"),
