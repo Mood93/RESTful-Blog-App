@@ -70,4 +70,11 @@ app.put("/blogs/:id", function(req, res) {
     });
 });
 
+//DELETE ROUTE
+app.delete("/blogs/:id", function(req, res) {
+    Blog.findByIdAndRemove(req.params.id, function(err) {
+        err ? res.redirect("/blogs") : res.redirect("/blogs") ;
+    })
+})
+
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));

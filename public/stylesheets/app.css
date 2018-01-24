@@ -13,3 +13,7 @@ img {
 img.ui.centered {
     width: 100%;
 }
+
+#delete {
+    display: inline;
+}
