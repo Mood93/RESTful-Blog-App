@@ -15,7 +15,7 @@
                             <span><%=blog.created.toDateString()%></span>
                         </div>
                         <div class="description">
-                            <p><%= blog.body.substring(0, blog.body.indexOf('.') + 1) %>..</p>
+                            <p><%= blog.body.substring(0, 65)%>..</p>
                         </div>
                         <div>
                         <a class="ui floated basic violet button" href="/blogs/<%= blog._id %>">
